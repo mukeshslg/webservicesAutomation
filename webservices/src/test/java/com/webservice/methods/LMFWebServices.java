@@ -24,6 +24,7 @@ public class LMFWebServices {
 	 * 
 	 * @param URI
 	 * @return response
+	 * get method
 	 */
 	public static Response get(String URI) {
 		RequestSpecification requestSpecification=RestAssured.given();
