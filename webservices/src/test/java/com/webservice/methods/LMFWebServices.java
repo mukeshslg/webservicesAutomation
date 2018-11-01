@@ -11,6 +11,7 @@ public class LMFWebServices {
 	 * @param URI
 	 * @param strJSON
 	 * @return response
+	 * post method
 	 */
 	public static Response post(String URI,String strJSON) {
 		RequestSpecification requestSpecification= RestAssured.given().body(strJSON);
