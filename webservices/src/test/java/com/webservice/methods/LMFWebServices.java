@@ -22,7 +22,7 @@ public class LMFWebServices {
 	/**
 	 * 
 	 * @param URI
-	 * @return
+	 * @return response
 	 */
 	public static Response get(String URI) {
 		RequestSpecification requestSpecification=RestAssured.given();
