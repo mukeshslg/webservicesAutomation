@@ -6,7 +6,12 @@ import com.jayway.restassured.response.Response;
 import com.jayway.restassured.specification.RequestSpecification;
 
 public class LMFWebServices {
-
+	/**
+	 * 
+	 * @param URI
+	 * @param strJSON
+	 * @return response
+	 */
 	public static Response post(String URI,String strJSON) {
 		RequestSpecification requestSpecification= RestAssured.given().body(strJSON);
 		requestSpecification.contentType(ContentType.JSON);
