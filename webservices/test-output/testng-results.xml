@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7634" started-at="2018-11-01T18:29:20Z" finished-at="2018-11-01T18:29:28Z">
+  <suite name="Default suite" duration-ms="5293" started-at="2018-11-01T20:35:24Z" finished-at="2018-11-01T20:35:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7634" started-at="2018-11-01T18:29:20Z" finished-at="2018-11-01T18:29:28Z">
+    <test name="Default test" duration-ms="5293" started-at="2018-11-01T20:35:24Z" finished-at="2018-11-01T20:35:29Z">
       <class name="com.webservice.testscripts.LmfTC001">
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="beforeMethod" is-config="true" duration-ms="16" started-at="2018-11-01T18:29:20Z" finished-at="2018-11-01T18:29:20Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="beforeMethod" is-config="true" duration-ms="15" started-at="2018-11-01T20:35:24Z" finished-at="2018-11-01T20:35:24Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyUserById()[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="verifyUserById" duration-ms="4839" started-at="2018-11-01T18:29:20Z" finished-at="2018-11-01T18:29:25Z">
+        <test-method status="PASS" signature="verifyUserById()[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="verifyUserById" duration-ms="2519" started-at="2018-11-01T20:35:24Z" finished-at="2018-11-01T20:35:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserById -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-01T18:29:25Z" finished-at="2018-11-01T18:29:25Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-01T20:35:26Z" finished-at="2018-11-01T20:35:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-01T18:29:25Z" finished-at="2018-11-01T18:29:25Z">
+        <test-method status="PASS" signature="verifyWeatherByCityId()[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="verifyWeatherByCityId" duration-ms="901" started-at="2018-11-01T20:35:26Z" finished-at="2018-11-01T20:35:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWeatherByCityId -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-01T20:35:26Z" finished-at="2018-11-01T20:35:26Z">
           <params>
             <param index="0">
               <value>
@@ -37,11 +41,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyWeatherByCityId()[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="verifyWeatherByCityId" duration-ms="874" started-at="2018-11-01T18:29:25Z" finished-at="2018-11-01T18:29:26Z">
+        <test-method status="PASS" signature="verifyWeatherByCityName()[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="verifyWeatherByCityName" duration-ms="905" started-at="2018-11-01T20:35:27Z" finished-at="2018-11-01T20:35:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWeatherByCityId -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-01T18:29:26Z" finished-at="2018-11-01T18:29:26Z">
+        </test-method> <!-- verifyWeatherByCityName -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-01T20:35:27Z" finished-at="2018-11-01T20:35:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-01T20:35:27Z" finished-at="2018-11-01T20:35:27Z">
           <params>
             <param index="0">
               <value>
@@ -52,19 +60,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-01T18:29:26Z" finished-at="2018-11-01T18:29:26Z">
+        <test-method status="PASS" signature="verifyWeatherByCityOther()[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="verifyWeatherByCityOther" duration-ms="918" started-at="2018-11-01T20:35:28Z" finished-at="2018-11-01T20:35:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="verifyWeatherByCityName()[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="verifyWeatherByCityName" duration-ms="893" started-at="2018-11-01T18:29:26Z" finished-at="2018-11-01T18:29:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWeatherByCityName -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-01T18:29:27Z" finished-at="2018-11-01T18:29:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-01T18:29:27Z" finished-at="2018-11-01T18:29:27Z">
+        </test-method> <!-- verifyWeatherByCityOther -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-11-01T20:35:28Z" finished-at="2018-11-01T20:35:28Z">
           <params>
             <param index="0">
               <value>
@@ -75,11 +75,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyWeatherByCityOther()[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="verifyWeatherByCityOther" duration-ms="968" started-at="2018-11-01T18:29:27Z" finished-at="2018-11-01T18:29:28Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-01T20:35:28Z" finished-at="2018-11-01T20:35:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWeatherByCityOther -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-01T18:29:28Z" finished-at="2018-11-01T18:29:28Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.webservice.testscripts.LmfTC001@cc285f4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-11-01T20:35:29Z" finished-at="2018-11-01T20:35:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

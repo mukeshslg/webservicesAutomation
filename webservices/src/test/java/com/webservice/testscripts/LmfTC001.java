@@ -2,11 +2,15 @@ package com.webservice.testscripts;
 
 import java.lang.reflect.Method;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.jayway.restassured.response.Response;
+import com.webservice.javaPojo.GetUsers;
 import com.webservice.methods.LMFWebServices;
 import com.webservice.utils.LMFEndPointURL;
 import com.webservice.utils.LMFURL;
@@ -34,10 +38,22 @@ public class LmfTC001 {
   }
   @Test
   public void verifyUserById() {
-	  String url=LMFURL.UTILITIESFiXURL2+LMFEndPointURL.USER_ID.getResourcePath("1");
+	  Gson gson=new GsonBuilder().create();
+	  GetUsers getUsers[];
+	  String url=LMFURL.UTILITIESFiXURL2+LMFEndPointURL.USER_ID.getResourcePath();
 	  Response response= LMFWebServices.get(url);
-	  System.out.println(response.getStatusCode());
-	  System.out.println(response.asString());
+	  int statusCode=response.getStatusCode();
+	  if (statusCode==200) {
+		  getUsers=gson.fromJson(response.getBody().asString(), GetUsers[].class);
+		  for (int i = 0; i < getUsers.length; i++) {
+			Assert.assertEquals(new Integer(i+1), getUsers[i].getId());
+			System.out.println(getUsers[i].toString());
+		}
+	  	}else {
+	  		Assert.assertTrue(false);
+	  	}
+	  
+	  
   }
   
   
