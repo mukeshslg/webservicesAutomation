@@ -19,6 +19,11 @@ public class LMFWebServices {
 		return response;
 		 
 	}
+	/**
+	 * 
+	 * @param URI
+	 * @return
+	 */
 	public static Response get(String URI) {
 		RequestSpecification requestSpecification=RestAssured.given();
 		requestSpecification.contentType(ContentType.JSON);
