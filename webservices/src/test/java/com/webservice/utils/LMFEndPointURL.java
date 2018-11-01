@@ -3,7 +3,8 @@ package com.webservice.utils;
 public enum LMFEndPointURL {
 	
 	CITY_WEATHER("/utilities/weather/city/"),
-	CITY_MISC("/miscaddHere");
+	CITY_MISC("/miscaddHere"),
+	USER_ID("/todos/");
 	
 	
 	String resourcePath;
