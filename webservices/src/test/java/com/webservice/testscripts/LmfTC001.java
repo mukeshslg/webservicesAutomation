@@ -11,6 +11,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.jayway.restassured.response.Response;
 import com.webservice.javaPojo.GetUsers;
+import com.webservice.javaPojo.SampleData;
 import com.webservice.methods.LMFWebServices;
 import com.webservice.utils.LMFEndPointURL;
 import com.webservice.utils.LMFURL;
@@ -47,7 +48,12 @@ public class LmfTC001 {
 		  getUsers=gson.fromJson(response.getBody().asString(), GetUsers[].class);
 		  for (int i = 0; i < getUsers.length; i++) {
 			Assert.assertEquals(new Integer(i+1), getUsers[i].getId());
-			System.out.println(getUsers[i].toString());
+			String title=getUsers[i].getTitle();
+			Assert.assertEquals(new Integer(i+1), getUsers[i].getId());
+			
+			Assert.assertEquals(SampleData.titles[i], title);
+			
+			//System.out.println(getUsers[i].toString());
 		}
 	  	}else {
 	  		Assert.assertTrue(false);
