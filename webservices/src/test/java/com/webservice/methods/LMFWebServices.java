@@ -14,7 +14,10 @@ public class LMFWebServices {
 	 * post method
 	 */
 	public static Response post(String URI,String strJSON) {
+		//String  authToken=LoginFunctionGenerateAuthToken("credentials");//authToken passed  in headers in all calls 
 		RequestSpecification requestSpecification= RestAssured.given().body(strJSON);
+		//requestSpecification.headers("Authorization","TokenCode here")//optional, generally login function sd generate auth toKen
+		//requestSpecification.headers("userid","111000");//optional
 		requestSpecification.contentType(ContentType.JSON);
 		Response response= requestSpecification.post(URI);
 		return response;

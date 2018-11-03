@@ -6,8 +6,8 @@
       <class name="com.webservice.testscripts.LmfTC001">
         <methods>
           <include name="beforeMethod"/>
-          <include name="verifyUserById"/>
           <include name="afterMethod"/>
+          <include name="verifyWeatherByCityId"/>
         </methods>
       </class> <!-- com.webservice.testscripts.LmfTC001 -->
     </classes>
